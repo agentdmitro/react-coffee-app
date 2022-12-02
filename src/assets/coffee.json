@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0",
+    "img": "https://coffee.alexflipnote.dev/x5tJvYLqz4M_coffee.jpg",
+    "title": "Запашна кава",
+    "price": 103,
+    "sizes": [26, 30, 35],
+    "category": 0,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "1",
+    "img": "https://coffee.alexflipnote.dev/Jp3JVo4CmKQ_coffee.png",
+    "title": "Латте",
+    "price": 40,
+    "sizes": [15, 20, 35],
+    "category": 2,
+    "types": [0],
+    "rating": 3
+  },
+  {
+    "id": "2",
+    "img": "https://coffee.alexflipnote.dev/49_jbeUPShE_coffee.png",
+    "title": "Пітто",
+    "price": 163,
+    "sizes": [26, 30, 35],
+    "category": 4,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "3",
+    "img": "https://coffee.alexflipnote.dev/QznOhyjl-xQ_coffee.jpg",
+    "title": "Макіато ",
+    "price": 169,
+    "sizes": [40, 50, 70],
+    "category": 0,
+    "types": [0, 1],
+    "rating": 2
+  },
+  {
+    "id": "4",
+    "img": "https://coffee.alexflipnote.dev/PWCd0nAwtOY_coffee.jpg",
+    "title": "Американо ",
+    "price": 75,
+    "sizes": [26, 30, 35],
+    "category": 2,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "5",
+    "img": "https://coffee.alexflipnote.dev/JLd6jwQI9ic_coffee.jpg",
+    "title": "Крем-кава",
+    "price": 110,
+    "sizes": [5, 15, 25],
+    "category": 3,
+    "types": [0],
+    "rating": 1
+  },
+  {
+    "id": "6",
+    "img": "https://coffee.alexflipnote.dev/Cm0yoDc1SLU_coffee.jpg",
+    "title": "Ристретто ",
+    "price": 120,
+    "sizes": [26, 30, 35],
+    "category": 1,
+    "types": [0, 1],
+    "rating": 5
+  },
+  {
+    "id": "7",
+    "img": "https://coffee.alexflipnote.dev/BFTSlcqA5Aw_coffee.jpg",
+    "title": "Доппіо ",
+    "price": 103,
+    "sizes": [15, 30, 35],
+    "category": 1,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "8",
+    "img": "https://coffee.alexflipnote.dev/6rhXrSjHlhU_coffee.png",
+    "title": "Флет вайт",
+    "price": 40,
+    "sizes": [26, 30, 35],
+    "category": 4,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "9",
+    "img": "https://coffee.alexflipnote.dev/0Z4EQ1xlw0I_coffee.jpg",
+    "title": "Кава по-віденськи",
+    "price": 19,
+    "sizes": [26, 30, 40],
+    "category": 0,
+    "types": [0],
+    "rating": 2
+  },
+  {
+    "id": "10",
+    "img": "https://coffee.alexflipnote.dev/Q60M4Vbo8_s_coffee.png",
+    "title": "Доппіо ",
+    "price": 103,
+    "sizes": [15, 30, 35],
+    "category": 1,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "11",
+    "img": "https://coffee.alexflipnote.dev/0cUQxbUBbbI_coffee.jpg",
+    "title": "Звичайна",
+    "price": 40,
+    "sizes": [30, 35],
+    "category": 4,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "12",
+    "img": "https://coffee.alexflipnote.dev/XwKylCHqEsM_coffee.jpg",
+    "title": "Еспрессо ",
+    "price": 70,
+    "sizes": [30],
+    "category": 2,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "13",
+    "img": "https://coffee.alexflipnote.dev/6rhXrSjHlhU_coffee.png",
+    "title": "Флет вайт мексика",
+    "price": 55,
+    "sizes": [15, 30, 35],
+    "category": 3,
+    "types": [0],
+    "rating": 3
+  },
+  {
+    "id": "14",
+    "img": "https://coffee.alexflipnote.dev/Az9Cmmjo8Bg_coffee.jpg",
+    "title": "Кава Львівська",
+    "price": 80,
+    "sizes": [15, 30, 50],
+    "category": 1,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "15",
+    "img": "https://coffee.alexflipnote.dev/BqKtHnDXSks_coffee.jpg",
+    "title": "Класична кава 1х1",
+    "price": 40,
+    "sizes": [26, 30, 35],
+    "category": 5,
+    "types": [0, 1],
+    "rating": 4
+  },
+  {
+    "id": "16",
+    "img": "https://coffee.alexflipnote.dev/HOSOOnmb6Xs_coffee.jpg",
+    "title": "Jacobs",
+    "price": 150,
+    "sizes": [15, 30, 35],
+    "category": 1,
+    "types": [0, 1],
+    "rating": 3
+  },
+  {
+    "id": "17",
+    "img": "https://coffee.alexflipnote.dev/lh2MZT-dRGA_coffee.png",
+    "title": "Luft",
+    "price": 45,
+    "sizes": [26, 30, 35],
+    "category": 4,
+    "types": [0, 1],
+    "rating": 1
+  }
+]
