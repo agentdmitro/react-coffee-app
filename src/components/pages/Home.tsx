@@ -63,13 +63,12 @@ const Home: React.FC = () => {
         sort: sortActive,
         sortType: sortType,
         pages: pages,
-        searchValue: searchInputValue ? searchInputValue : '',
-        itemsLimit: itemsLimit,
+        searchValue: searchValue,
       });
       navigate(`?${queryString}`);
     }
     isMounted.current = true;
-  }, [activeCat, sortActive, sortType, pages, searchInputValue, itemsLimit, navigate]);
+  }, [activeCat, sortActive, sortType, pages, searchValue, itemsLimit, navigate]);
 
   React.useEffect(() => {
     if (window.location.search) {
@@ -93,7 +92,7 @@ const Home: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     if (!isSearch.current) {
-      navigate('');
+      // navigate('');
       fetchCoffees();
     }
     isSearch.current = false;
