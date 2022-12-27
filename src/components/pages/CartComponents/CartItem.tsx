@@ -19,22 +19,29 @@ export const CartItem: React.FC<CartItemProps> = ({ id, title, price, img, type,
   const onIncrementCount = () => {
     dispatch(
       addToCart({
-        id,
+        id: id,
         title: '',
         price: 0,
         img: '',
-        type: '',
-        size: '',
+        type,
+        size,
         count: 0,
       }),
     );
   };
   const onDecrementCount = () => {
-    dispatch(decrementItemCount(id));
+    dispatch(decrementItemCount({ id: id, title: '', price: 0, img: '', type, size, count: 0 }));
   };
   const removeItem = () => {
     if (window.confirm('Впевнений?')) {
-      dispatch(removeFromCart(id));
+      console.log(`id: ${id} \nsize: ${size} \ntype: ${type}`);
+      dispatch(
+        removeFromCart({
+          id: id,
+          type: type,
+          size: size,
+        }),
+      );
     }
   };
 

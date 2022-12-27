@@ -15,11 +15,18 @@ type CoffeeProps = {
 
 export const Coffee: React.FC<CoffeeProps> = ({ id, title, price, img, sizes, types }) => {
   const dispatch = useDispatch();
-  const addedItems = useSelector((state: any) =>
-    state.cart.items.find((obj: any) => obj.id === id),
-  );
+  const typeNames = ['без сиропу', 'з сиропом'];
   const [activeSize, setActiveSize] = React.useState(0);
   const [activeType, setActiveType] = React.useState(0);
+
+  const addedItems = useSelector((state: any) =>
+    state.cart.items.find(
+      (obj: any) =>
+        obj.id === id &&
+        Number(obj.size) === Number(sizes[activeSize]) &&
+        String(obj.type) === String(typeNames[activeType]),
+    ),
+  );
 
   const coffeeCount = addedItems ? addedItems.count : 0;
 
@@ -37,13 +44,20 @@ export const Coffee: React.FC<CoffeeProps> = ({ id, title, price, img, sizes, ty
   };
 
   const onRemoveFromCart = (id: any) => {
-    dispatch(decrementItemCount(id));
+    const item: cartItem = {
+      id,
+      title,
+      price,
+      img,
+      type: typeNames[activeType],
+      size: sizes[activeSize],
+      count: 0,
+    };
+    dispatch(decrementItemCount(item));
     if (coffeeCount === 1) {
-      dispatch(removeFromCart(id));
+      dispatch(removeFromCart(item));
     }
   };
-
-  const typeNames = ['без сиропу', 'з сиропом'];
 
   return (
     <div className="item-block">

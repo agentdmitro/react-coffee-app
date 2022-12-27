@@ -8,7 +8,7 @@ export type cartItem = {
   price: number;
   img: string;
   type: string;
-  size: string;
+  size: any;
   count: number;
 };
 
@@ -27,7 +27,12 @@ export const cartSlice = createSlice({
   },
   reducers: {
     addToCart: (state, action: PayloadAction<cartItem>) => {
-      const findItem: any = state.items.find((obj) => obj.id === action.payload.id);
+      const findItem: any = state.items.find(
+        (obj) =>
+          obj.size === action.payload.size &&
+          obj.type === action.payload.type &&
+          obj.id === action.payload.id,
+      );
 
       if (findItem) {
         if (findItem.count >= 5) {
@@ -43,8 +48,13 @@ export const cartSlice = createSlice({
       }
       state.totalPrice = getTotalPrice(state.items);
     },
-    decrementItemCount: (state, action: PayloadAction<string>) => {
-      const findItem: any = state.items.find((obj: any) => obj.id === action.payload);
+    decrementItemCount: (state, action) => {
+      const findItem: any = state.items.find(
+        (obj) =>
+          obj.size === action.payload.size &&
+          obj.type === action.payload.type &&
+          obj.id === action.payload.id,
+      );
       if (findItem) {
         if (findItem.count <= 1) {
           return;
@@ -55,7 +65,12 @@ export const cartSlice = createSlice({
       state.totalPrice = getTotalPrice(state.items);
     },
     removeFromCart: (state, action) => {
-      state.items = state.items.filter((obj: any) => obj.id !== action.payload);
+      state.items = state.items.filter(
+        (obj: any) =>
+          obj.id !== action.payload.id ||
+          obj.size !== action.payload.size ||
+          obj.type !== action.payload.type,
+      );
       if (state.items.length <= 0) {
         state.totalPrice = 0;
       }
